@@ -76,7 +76,7 @@ Campus Loop is an app that allows college students to buy/sell dorm/apartment fu
 
 ### [BONUS] Digital Wireframes & Mockups
 
-<img src="https://www.figma.com/file/WC14EpWJzIHLq747VowpEA/Untitled?node-id=1%3A2" width=600>
+<img src="https://www.figma.com/file/WC14EpWJzIHLq747VowpEA/Untitled?node-id=1%3A2.pdf" width=600>
 
 ### [BONUS] Interactive Prototype
 
