@@ -71,10 +71,6 @@ Campus Loop is an app that allows college students to buy/sell dorm/apartment fu
 * Creation Screen
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups
 * Login Screen
 <img src='https://www.linkpicture.com/q/Login.jpg' width=300>
 * Profile Screen
