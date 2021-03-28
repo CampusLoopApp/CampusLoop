@@ -1,0 +1,6 @@
+framework module Pods_CampusLoop {
+  umbrella header "Pods-CampusLoop-umbrella.h"
+
+  export *
+  module * { export * }
+}
