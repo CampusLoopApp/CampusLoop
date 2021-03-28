@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  CampusLoop
 //
-//  Created by Okwuolisa Umeokolo on 3/23/21.
+//  Created by CampusLoop Teams on 3/23/21.
 //
 
 import UIKit
