@@ -126,5 +126,8 @@ Campus Loop is an app that allows college students to buy/sell dorm/apartment fu
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
 
+## Progress GIF
+![](https://i.imgur.com/RXE00MH.gif)
+
 
 
