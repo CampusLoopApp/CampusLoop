@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F87260AA75C0018A25E /* AppDelegate.swift */; };
 		79056F8A260AA75C0018A25E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F89260AA75C0018A25E /* SceneDelegate.swift */; };
-		79056F8C260AA75C0018A25E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F8B260AA75C0018A25E /* ViewController.swift */; };
+		79056F8C260AA75C0018A25E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F8B260AA75C0018A25E /* LoginViewController.swift */; };
 		79056F8F260AA75C0018A25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79056F8D260AA75C0018A25E /* Main.storyboard */; };
 		79056F91260AA75E0018A25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79056F90260AA75E0018A25E /* Assets.xcassets */; };
 		79056F94260AA75E0018A25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79056F92260AA75E0018A25E /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		79056F84260AA75C0018A25E /* CampusLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79056F87260AA75C0018A25E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79056F89260AA75C0018A25E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79056F8B260AA75C0018A25E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79056F8B260AA75C0018A25E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		79056F8E260AA75C0018A25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79056F90260AA75E0018A25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79056F93260AA75E0018A25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 				A272B209D3DAC81DEB035F1C /* Pods-CampusLoop.debug.xcconfig */,
 				EDE35094AB808B3DFBF0D9EF /* Pods-CampusLoop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,13 +74,29 @@
 			children = (
 				79056F87260AA75C0018A25E /* AppDelegate.swift */,
 				79056F89260AA75C0018A25E /* SceneDelegate.swift */,
-				79056F8B260AA75C0018A25E /* ViewController.swift */,
-				79056F8D260AA75C0018A25E /* Main.storyboard */,
+				797F0AC226116DF1006BD620 /* ViewControllers */,
 				79056F90260AA75E0018A25E /* Assets.xcassets */,
-				79056F92260AA75E0018A25E /* LaunchScreen.storyboard */,
+				797F0AC326116E16006BD620 /* Storyboards */,
 				79056F95260AA75E0018A25E /* Info.plist */,
 			);
 			path = CampusLoop;
+			sourceTree = "<group>";
+		};
+		797F0AC226116DF1006BD620 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79056F8B260AA75C0018A25E /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		797F0AC326116E16006BD620 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				79056F92260AA75E0018A25E /* LaunchScreen.storyboard */,
+				79056F8D260AA75C0018A25E /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8A7559F3ADE851AE7D4DFD0E /* Frameworks */ = {
@@ -206,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79056F8C260AA75C0018A25E /* ViewController.swift in Sources */,
+				79056F8C260AA75C0018A25E /* LoginViewController.swift in Sources */,
 				79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */,
 				79056F8A260AA75C0018A25E /* SceneDelegate.swift in Sources */,
 			);
