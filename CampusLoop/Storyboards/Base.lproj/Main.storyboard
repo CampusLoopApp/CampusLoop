@@ -28,7 +28,7 @@
                                 <rect key="frame" x="20" y="362" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aK4-Jp-YJp">
                                 <rect key="frame" x="20" y="404" width="374" height="30"/>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="-1252" y="-970"/>
         </scene>
-        <!--Posts-->
+        <!--Post Table View Controller-->
         <scene sceneID="Vf9-Fh-L7N">
             <objects>
-                <tableViewController id="6S0-bk-LME" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PostTableViewController" id="6S0-bk-LME" customClass="PostTableViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3D0-ff-jft">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
                             <outlet property="delegate" destination="6S0-bk-LME" id="oiB-0C-fQS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Posts" id="efL-MN-4u1">
+                    <navigationItem key="navigationItem" id="efL-MN-4u1">
                         <barButtonItem key="rightBarButtonItem" title="Create Post" image="square.and.pencil" catalog="system" id="cSG-OR-cy2">
                             <connections>
                                 <segue destination="6Af-B2-QHm" kind="presentation" id="ErX-QA-oMy"/>
@@ -191,7 +191,7 @@
         <!--Search-->
         <scene sceneID="4q7-4I-Fti">
             <objects>
-                <tableViewController id="9Hl-TE-UYj" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchTableViewController" id="9Hl-TE-UYj" customClass="SearchTableViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rMW-H1-Iso">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="-2381" y="571"/>
         </scene>
-        <!--Profile-->
+        <!--Profile Table View Controller-->
         <scene sceneID="EEk-hm-BBa">
             <objects>
-                <tableViewController id="hAn-s7-9ll" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProfileTableViewController" id="hAn-s7-9ll" customClass="ProfileTableViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HVS-gB-cjc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,7 +281,7 @@
                             <outlet property="delegate" destination="hAn-s7-9ll" id="aiW-XK-qVv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Profile" id="i78-ei-sJE">
+                    <navigationItem key="navigationItem" id="i78-ei-sJE">
                         <barButtonItem key="rightBarButtonItem" title="Edit Profile" image="gearshape" catalog="system" id="FaK-s7-cdd">
                             <connections>
                                 <segue destination="Fac-cq-Xvq" kind="show" id="2EC-0X-ivB"/>
@@ -327,10 +327,10 @@
             </objects>
             <point key="canvasLocation" x="-1613" y="571"/>
         </scene>
-        <!--Market-->
+        <!--Market Collection View Controller-->
         <scene sceneID="phw-C1-Zy1">
             <objects>
-                <collectionViewController id="veh-Ff-jNa" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="MarketCollectionViewController" id="veh-Ff-jNa" customClass="MarketCollectionViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="GbK-b9-daV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +356,7 @@
                             <outlet property="delegate" destination="veh-Ff-jNa" id="wMu-LQ-thw"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Market" id="yMX-4C-Ge1">
+                    <navigationItem key="navigationItem" id="yMX-4C-Ge1">
                         <barButtonItem key="rightBarButtonItem" title="Sell" image="square.and.pencil" catalog="system" id="OvI-Hp-ZFP">
                             <connections>
                                 <segue destination="1Kq-vL-KlP" kind="presentation" id="1B2-CF-MlR"/>
@@ -429,7 +429,7 @@
         <!--Settings-->
         <scene sceneID="Iw7-rr-Dud">
             <objects>
-                <tableViewController id="Fac-cq-Xvq" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingsTableViewController" id="Fac-cq-Xvq" customClass="SettingsTableViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ycr-sK-5O0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -455,10 +455,10 @@
             </objects>
             <point key="canvasLocation" x="-855" y="2036"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Comments Table View Controller-->
         <scene sceneID="U6e-Sq-tgq">
             <objects>
-                <tableViewController id="PJQ-ZV-Q8R" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CommentsTableViewController" id="PJQ-ZV-Q8R" customClass="CommentsTableViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MMp-7L-T6P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
