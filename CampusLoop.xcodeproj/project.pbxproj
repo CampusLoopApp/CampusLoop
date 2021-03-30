@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		71A302762612ADE40047DF81 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A302752612ADE40047DF81 /* CameraViewController.swift */; };
-		71EC3E942612BC2500DE7562 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC3E932612BC2500DE7562 /* FeedViewController.swift */; };
 		7900F5C12613D4AA00FF84CD /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */; };
 		7900F5C42613D54300FF84CD /* MarketCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */; };
 		7900F5C72613D5AC00FF84CD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C62613D5AC00FF84CD /* ProfileTableViewController.swift */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		42F32B8365C30E9999E72606 /* Pods_CampusLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A302752612ADE40047DF81 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = CampusLoop/CameraViewController.swift; sourceTree = SOURCE_ROOT; };
-		71EC3E932612BC2500DE7562 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = CampusLoop/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
 		7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewController.swift; sourceTree = "<group>"; };
 		7900F5C62613D5AC00FF84CD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		797F0AC226116DF1006BD620 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				71EC3E932612BC2500DE7562 /* FeedViewController.swift */,
 				71A302752612ADE40047DF81 /* CameraViewController.swift */,
 				79056F8B260AA75C0018A25E /* LoginViewController.swift */,
 				7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */,
@@ -249,7 +246,6 @@
 				79056F8C260AA75C0018A25E /* LoginViewController.swift in Sources */,
 				7900F5C12613D4AA00FF84CD /* PostTableViewController.swift in Sources */,
 				71A302762612ADE40047DF81 /* CameraViewController.swift in Sources */,
-				71EC3E942612BC2500DE7562 /* FeedViewController.swift in Sources */,
 				7900F5C42613D54300FF84CD /* MarketCollectionViewController.swift in Sources */,
 				79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */,
 				7900F5C72613D5AC00FF84CD /* ProfileTableViewController.swift in Sources */,
