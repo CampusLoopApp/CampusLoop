@@ -6,9 +6,33 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 
 class SettingsTableViewController: UITableViewController {
 
+=======
+import Parse
+
+class SettingsTableViewController: UITableViewController {
+
+
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+            
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+            
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                let delegate = windowScene.delegate as? SceneDelegate
+              else {
+                return
+              }
+            delegate.window?.rootViewController = loginViewController
+    }
+    
+    
+    
+>>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
     override func viewDidLoad() {
         super.viewDidLoad()
 

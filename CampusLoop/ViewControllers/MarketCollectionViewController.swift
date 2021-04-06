@@ -6,15 +6,22 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import Parse
+=======
+>>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
 
 private let reuseIdentifier = "Cell"
 
 class MarketCollectionViewController: UICollectionViewController {
+<<<<<<< HEAD
     
     
     var product = [PFObject]()
     
+=======
+
+>>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +32,7 @@ class MarketCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+<<<<<<< HEAD
         let query = PFQuery(className:"Product")
         query.includeKeys(["product_name", "price", "description", "seller"])
         query.limit = 20
@@ -35,6 +43,8 @@ class MarketCollectionViewController: UICollectionViewController {
                 self.collectionView.reloadData()
             }
         }
+=======
+>>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
     }
 
     /*
