@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import Parse
 
 private let reuseIdentifier = "Cell"
 
 class MarketCollectionViewController: UICollectionViewController {
-
+    
+    
+    var product = [PFObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +25,16 @@ class MarketCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        let query = PFQuery(className:"Product")
+        query.includeKeys(["product_name", "price", "description", "seller"])
+        query.limit = 20
+        
+        query.findObjectsInBackground { (product: [PFObject]?, error: Error?) in
+            if product != nil {
+                self.product = product!
+                self.collectionView.reloadData()
+            }
+        }
     }
 
     /*
