@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rj4-7M-B7Z">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -226,11 +222,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daT-jN-YAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="-123" y="1303"/>
-=======
-            <point key="canvasLocation" x="-123" y="1304"/>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
         </scene>
         <!--Search-->
         <scene sceneID="h5U-rE-raD">
@@ -266,7 +258,6 @@
             </objects>
             <point key="canvasLocation" x="-2381" y="571"/>
         </scene>
-<<<<<<< HEAD
         <!--Profile Table View Controller-->
         <scene sceneID="EEk-hm-BBa">
             <objects>
@@ -319,8 +310,6 @@
             </objects>
             <point key="canvasLocation" x="-858" y="571"/>
         </scene>
-=======
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
         <!--Market-->
         <scene sceneID="alB-RB-XvX">
             <objects>
@@ -353,7 +342,6 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-<<<<<<< HEAD
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductView" id="1bx-4D-J5i" customClass="ProductCell" customModule="CampusLoop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -388,15 +376,6 @@
                                     <outlet property="productNameLabel" destination="YU2-oK-rtz" id="7Yr-vh-OM1"/>
                                     <segue destination="5s4-Il-Xdh" kind="show" id="bMa-NF-y4o"/>
                                 </connections>
-=======
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1bx-4D-J5i">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="e4e-4q-I32">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -411,7 +390,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-<<<<<<< HEAD
                     <connections>
                         <outlet property="collectionView" destination="GbK-b9-daV" id="zNH-dY-hyI"/>
                     </connections>
@@ -419,12 +397,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyP-jy-J7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1613.0434782608697" y="1303.7946428571429"/>
-=======
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CyP-jy-J7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1613" y="1304"/>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Uzy-6t-SSd">
@@ -438,30 +410,18 @@
                     <connections>
                         <segue destination="BWe-RC-ugD" kind="relationship" relationship="viewControllers" id="QnW-cu-TcS"/>
                         <segue destination="9dR-kB-xDy" kind="relationship" relationship="viewControllers" id="5t4-ou-2bK"/>
-<<<<<<< HEAD
                         <segue destination="ZBS-9V-INY" kind="relationship" relationship="viewControllers" id="jqU-oU-nPp"/>
                         <segue destination="HbO-SI-9UW" kind="relationship" relationship="viewControllers" id="uMs-oW-EBF"/>
-=======
-                        <segue destination="HbO-SI-9UW" kind="relationship" relationship="viewControllers" id="uMs-oW-EBF"/>
-                        <segue destination="zHV-L7-Gdo" kind="relationship" relationship="viewControllers" id="OeD-qD-XF5"/>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hww-Kz-4FR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1252" y="-267"/>
         </scene>
-<<<<<<< HEAD
         <!--Market Camera View Controller-->
         <scene sceneID="1KF-Ma-WKz">
             <objects>
                 <viewController storyboardIdentifier="MarketCameraViewController" id="1Kq-vL-KlP" customClass="MarketCameraViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
-=======
-        <!--View Controller-->
-        <scene sceneID="1KF-Ma-WKz">
-            <objects>
-                <viewController id="1Kq-vL-KlP" sceneMemberID="viewController">
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                     <view key="view" contentMode="scaleToFill" id="ae0-Zv-vID">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -470,18 +430,14 @@
                                 <rect key="frame" x="19" y="20" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
-<<<<<<< HEAD
                                 <connections>
                                     <action selector="onCancelButton:" destination="1Kq-vL-KlP" eventType="touchUpInside" id="OJS-3O-K2d"/>
                                 </connections>
-=======
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y04-LK-N7d">
                                 <rect key="frame" x="356" y="20" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post"/>
-<<<<<<< HEAD
                                 <connections>
                                     <action selector="onPostButton:" destination="1Kq-vL-KlP" eventType="touchUpInside" id="ZXs-8i-ndL"/>
                                 </connections>
@@ -498,19 +454,10 @@
                                 <rect key="frame" x="16" y="407" width="374" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-=======
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sfP-Wy-8gq">
-                                <rect key="frame" x="20" y="58" width="374" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-<<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-r7-ne2">
                                 <rect key="frame" x="20" y="330" width="110" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -523,15 +470,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-=======
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P7a-eT-Yup"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-<<<<<<< HEAD
                     <connections>
                         <outlet property="descriptionTextView" destination="sfP-Wy-8gq" id="jRm-DB-aLw"/>
                         <outlet property="imageView" destination="MSk-GW-jGR" id="gpV-eZ-Zej"/>
@@ -618,81 +562,12 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yEg-1J-Jvh" id="e5G-dQ-IZr">
-=======
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E1g-PK-wQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1613" y="2036"/>
-        </scene>
-        <!--Settings Table View Controller-->
-        <scene sceneID="Oye-N1-GXI">
-            <objects>
-                <tableViewController title="Settings Table View Controller" id="C7G-On-me5" customClass="SettingsTableViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c1z-Va-pC0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ng8-mu-94k">
-                            <rect key="frame" x="0.0" y="273.5" width="414" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Logout"/>
-                            <connections>
-                                <action selector="onLogoutButton:" destination="C7G-On-me5" eventType="touchUpInside" id="YBq-9z-c9X"/>
-                                <action selector="onLogoutButton:" destination="1m2-E0-3su" eventType="touchUpInside" id="gx6-vN-Eyh"/>
-                            </connections>
-                        </button>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cIy-Cx-UdU">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cIy-Cx-UdU" id="Bbg-nf-emf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psf-Xv-1bo">
-                                            <rect key="frame" x="20" y="6" width="127" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Change Username"/>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qRt-uw-OaH">
-                                <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qRt-uw-OaH" id="Ml9-FX-bYh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rcs-Yg-yZa">
-                                <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rcs-Yg-yZa" id="bky-AD-REu">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eV7-Ez-tvn">
-                                <rect key="frame" x="0.0" y="158.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eV7-Ez-tvn" id="jKp-VU-lO0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4x9-TT-vwv">
-                                <rect key="frame" x="0.0" y="202" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4x9-TT-vwv" id="rgQ-WN-eQk">
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-<<<<<<< HEAD
                             <outlet property="dataSource" destination="Fac-cq-Xvq" id="6jF-f2-wMD"/>
                             <outlet property="delegate" destination="Fac-cq-Xvq" id="grv-VS-sq7"/>
                         </connections>
@@ -702,68 +577,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ql-5c-bJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-123" y="2036"/>
-=======
-                            <outlet property="dataSource" destination="C7G-On-me5" id="sFN-de-Zky"/>
-                            <outlet property="delegate" destination="C7G-On-me5" id="0Yf-v1-iIq"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sgv-KO-dSZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="1m2-E0-3su" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-823" y="2036"/>
-        </scene>
-        <!--Profile View Controller-->
-        <scene sceneID="UDD-cx-SZc">
-            <objects>
-                <viewController storyboardIdentifier="Profile View Controller" title="Profile View Controller" id="w61-br-rUn" customClass="ProfileViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ytp-kL-EYY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hFO-cN-kXz">
-                                <rect key="frame" x="0.0" y="307" width="414" height="589"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sp1-ir-9iX">
-                                <rect key="frame" x="8" y="96.5" width="173" height="184"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="185" id="9IS-gL-WL6"/>
-                                    <constraint firstAttribute="width" constant="173" id="cm7-0F-dRi"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGr-C5-ess">
-                                <rect key="frame" x="197" y="104" width="124" height="33.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="e45-yQ-L5c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Sp1-ir-9iX" firstAttribute="top" secondItem="e45-yQ-L5c" secondAttribute="top" constant="8" id="MXU-kx-qa0"/>
-                            <constraint firstItem="lGr-C5-ess" firstAttribute="top" secondItem="e45-yQ-L5c" secondAttribute="top" constant="16" id="W9U-cO-WqS"/>
-                            <constraint firstItem="Sp1-ir-9iX" firstAttribute="leading" secondItem="e45-yQ-L5c" secondAttribute="leading" constant="8" id="XZZ-H7-MEc"/>
-                            <constraint firstItem="lGr-C5-ess" firstAttribute="leading" secondItem="Sp1-ir-9iX" secondAttribute="trailing" constant="16" id="xuk-q3-FOT"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Hqv-6U-b4R">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape.fill" catalog="system" id="EQU-cB-6Q6">
-                            <connections>
-                                <segue destination="C7G-On-me5" kind="presentation" id="cwb-T2-hOz"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="usernameLabel" destination="lGr-C5-ess" id="IcC-L4-XTe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ukg-IO-3zo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-823.1884057971015" y="1301.7857142857142"/>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
         </scene>
         <!--Comments Table View Controller-->
         <scene sceneID="U6e-Sq-tgq">
@@ -843,28 +656,6 @@
             </objects>
             <point key="canvasLocation" x="-2382.608695652174" y="2035.7142857142856"/>
         </scene>
-<<<<<<< HEAD
-=======
-        <!--Profile-->
-        <scene sceneID="tn5-ET-rcd">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zHV-L7-Gdo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="jMm-bn-vgN"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="boY-Ea-9Gf">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="w61-br-rUn" kind="relationship" relationship="rootViewController" id="VZ2-gp-q40"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ph-Vx-i4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-823" y="571"/>
-        </scene>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
     </scenes>
     <resources>
         <image name="CampusLoop Logo Transparent" width="995" height="341"/>
@@ -872,25 +663,16 @@
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="emptyimage" width="512" height="512"/>
-<<<<<<< HEAD
         <image name="gearshape" catalog="system" width="128" height="121"/>
-=======
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.slash" catalog="system" width="128" height="115"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
-<<<<<<< HEAD
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo" catalog="system" width="128" height="93"/>
-=======
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
->>>>>>> 1c556b90b91c8cca4b1d1b2e07885ad2f8363ebc
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
