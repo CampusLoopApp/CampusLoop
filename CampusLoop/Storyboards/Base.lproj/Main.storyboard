@@ -613,7 +613,7 @@
                                     <action selector="onPostButton:" destination="Qq4-oB-Rl7" eventType="touchUpInside" id="4Be-eq-IND"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-d2-8qy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-d2-8qy">
                                 <rect key="frame" x="20" y="58" width="374" height="274"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -621,9 +621,6 @@
                                     <constraint firstAttribute="width" secondItem="JJd-d2-8qy" secondAttribute="height" multiplier="187:137" id="gXq-co-O35"/>
                                     <constraint firstAttribute="height" constant="274" id="nSs-ht-WZI"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="jEb-uH-dSD" appends="YES" id="Axf-eP-DXX"/>
-                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-nm-Smm">
                                 <rect key="frame" x="20" y="340" width="374" height="34"/>
@@ -631,7 +628,7 @@
                                     <constraint firstAttribute="height" constant="34" id="hXo-mo-uj3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFb-Os-10P">
                                 <rect key="frame" x="20" y="382" width="374" height="34"/>
@@ -644,11 +641,18 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wa3-6K-SXT">
                                 <rect key="frame" x="20" y="424" width="374" height="183"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-ah-H2q">
+                                <rect key="frame" x="167" y="20" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Picture"/>
+                                <connections>
+                                    <action selector="onCameraButton:" destination="Qq4-oB-Rl7" eventType="touchUpInside" id="lWh-c7-3v7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kL5-Zp-fc4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -686,11 +690,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2k-Ql-gij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="jEb-uH-dSD">
-                    <connections>
-                        <action selector="onCameraButton:" destination="Qq4-oB-Rl7" id="lxn-Gp-oJB"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1613.0434782608697" y="2035.7142857142856"/>
         </scene>
