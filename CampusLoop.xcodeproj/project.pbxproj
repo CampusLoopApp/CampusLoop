@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6CC5752622385500C5E911 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CC5742622385500C5E911 /* ProfileViewController.swift */; };
+		1C6CC57826223A4500C5E911 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CC57726223A4500C5E911 /* SettingsViewController.swift */; };
+		1C6CC57B26223B4500C5E911 /* ChangeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CC57A26223B4500C5E911 /* ChangeProfileViewController.swift */; };
 		71A302762612ADE40047DF81 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A302752612ADE40047DF81 /* CameraViewController.swift */; };
 		7900F5C12613D4AA00FF84CD /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */; };
 		7900F5C42613D54300FF84CD /* MarketCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */; };
-		7900F5C72613D5AC00FF84CD /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C62613D5AC00FF84CD /* ProfileTableViewController.swift */; };
-		7900F5CA2613D5F300FF84CD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C92613D5F300FF84CD /* SettingsTableViewController.swift */; };
 		7900F5CD2613D67000FF84CD /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */; };
 		7900F5D02613D7B800FF84CD /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */; };
 		79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F87260AA75C0018A25E /* AppDelegate.swift */; };
@@ -27,12 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C6CC5742622385500C5E911 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1C6CC57726223A4500C5E911 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1C6CC57A26223B4500C5E911 /* ChangeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfileViewController.swift; sourceTree = "<group>"; };
 		42F32B8365C30E9999E72606 /* Pods_CampusLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A302752612ADE40047DF81 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = CampusLoop/CameraViewController.swift; sourceTree = SOURCE_ROOT; };
 		7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewController.swift; sourceTree = "<group>"; };
-		7900F5C62613D5AC00FF84CD /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		7900F5C92613D5F300FF84CD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		79056F84260AA75C0018A25E /* CampusLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,12 +112,13 @@
 				71A302752612ADE40047DF81 /* CameraViewController.swift */,
 				7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */,
 				7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */,
-				7900F5C62613D5AC00FF84CD /* ProfileTableViewController.swift */,
-				7900F5C92613D5F300FF84CD /* SettingsTableViewController.swift */,
 				7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */,
 				7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */,
 				792E1E4B261CF89700634B7D /* ProductDetailsViewController.swift */,
 				79C09C992621E37500785CE7 /* MarketCameraViewController.swift */,
+				1C6CC5742622385500C5E911 /* ProfileViewController.swift */,
+				1C6CC57726223A4500C5E911 /* SettingsViewController.swift */,
+				1C6CC57A26223B4500C5E911 /* ChangeProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -257,12 +260,13 @@
 				792E1E4C261CF89700634B7D /* ProductDetailsViewController.swift in Sources */,
 				7900F5C12613D4AA00FF84CD /* PostTableViewController.swift in Sources */,
 				71A302762612ADE40047DF81 /* CameraViewController.swift in Sources */,
+				1C6CC57B26223B4500C5E911 /* ChangeProfileViewController.swift in Sources */,
+				1C6CC5752622385500C5E911 /* ProfileViewController.swift in Sources */,
 				7900F5C42613D54300FF84CD /* MarketCollectionViewController.swift in Sources */,
 				79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */,
-				7900F5C72613D5AC00FF84CD /* ProfileTableViewController.swift in Sources */,
 				7900F5CD2613D67000FF84CD /* SearchTableViewController.swift in Sources */,
+				1C6CC57826223A4500C5E911 /* SettingsViewController.swift in Sources */,
 				79056F8A260AA75C0018A25E /* SceneDelegate.swift in Sources */,
-				7900F5CA2613D5F300FF84CD /* SettingsTableViewController.swift in Sources */,
 				79C09C9A2621E37500785CE7 /* MarketCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
