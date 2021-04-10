@@ -162,7 +162,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emptyimage" translatesAutoresizingMaskIntoConstraints="NO" id="3Ot-v6-7Zh">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder Image" translatesAutoresizingMaskIntoConstraints="NO" id="3Ot-v6-7Zh">
                                 <rect key="frame" x="19" y="76" width="368" height="287"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -613,7 +613,7 @@
                                     <action selector="onPostButton:" destination="Qq4-oB-Rl7" eventType="touchUpInside" id="4Be-eq-IND"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-d2-8qy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder Image" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-d2-8qy">
                                 <rect key="frame" x="20" y="58" width="374" height="274"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -696,10 +696,10 @@
     </scenes>
     <resources>
         <image name="CampusLoop Logo Transparent" width="995" height="341"/>
+        <image name="Placeholder Image" width="1024" height="1024"/>
         <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
-        <image name="emptyimage" width="512" height="512"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.slash" catalog="system" width="128" height="115"/>
