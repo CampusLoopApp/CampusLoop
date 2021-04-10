@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class MarketCameraViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class MarketCameraViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, UITextViewDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var productName: UITextField!
@@ -17,7 +17,9 @@ class MarketCameraViewController: UIViewController, UIImagePickerControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        productDescription.delegate = self
+        productDescription.text = "Description..."
+        productDescription.textColor = UIColor.lightGray
         // Do any additional setup after loading the view.
     }
     
@@ -74,6 +76,20 @@ class MarketCameraViewController: UIViewController, UIImagePickerControllerDeleg
         imageView.image = scaledImage
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Description..."
+            textView.textColor = UIColor.lightGray
+        }
     }
     
     /*
