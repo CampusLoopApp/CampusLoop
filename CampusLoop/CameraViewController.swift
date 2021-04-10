@@ -24,6 +24,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onCanelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func onSubmitButton(_ sender: Any) {
         let post = PFObject(className: "Posts")
@@ -52,11 +56,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true
-        
+        print("onImageButton")
         if UIImagePickerController.isSourceTypeAvailable(.camera){
             picker.sourceType = .camera
+            print(".camera")
         } else{
             picker.sourceType = .photoLibrary
+            print(".photoLibrary")
         }
         present(picker, animated: true, completion: nil)
     }

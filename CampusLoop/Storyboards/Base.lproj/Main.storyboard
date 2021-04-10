@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rj4-7M-B7Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -141,6 +141,9 @@
                                 <rect key="frame" x="19" y="20" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCanelButton:" destination="6Af-B2-QHm" eventType="touchUpInside" id="KGJ-S5-gLm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxm-Gp-ugK">
                                 <rect key="frame" x="356" y="20" width="31" height="30"/>
@@ -386,7 +389,7 @@
                     <navigationItem key="navigationItem" id="yMX-4C-Ge1">
                         <barButtonItem key="rightBarButtonItem" title="Sell" image="square.and.pencil" catalog="system" id="OvI-Hp-ZFP">
                             <connections>
-                                <segue destination="1Kq-vL-KlP" kind="presentation" id="1B2-CF-MlR"/>
+                                <segue destination="Qq4-oB-Rl7" kind="presentation" id="LUt-xa-XJd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -417,80 +420,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hww-Kz-4FR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1252" y="-267"/>
-        </scene>
-        <!--Market Camera View Controller-->
-        <scene sceneID="1KF-Ma-WKz">
-            <objects>
-                <viewController storyboardIdentifier="MarketCameraViewController" id="1Kq-vL-KlP" customClass="MarketCameraViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ae0-Zv-vID">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-By-gnM">
-                                <rect key="frame" x="19" y="20" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="onCancelButton:" destination="1Kq-vL-KlP" eventType="touchUpInside" id="OJS-3O-K2d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y04-LK-N7d">
-                                <rect key="frame" x="356" y="20" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Post"/>
-                                <connections>
-                                    <action selector="onPostButton:" destination="1Kq-vL-KlP" eventType="touchUpInside" id="ZXs-8i-ndL"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MSk-GW-jGR">
-                                <rect key="frame" x="19" y="58" width="368" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bi0-c2-POD" appends="YES" id="Vnh-i0-F9D"/>
-                                </connections>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sfP-Wy-8gq">
-                                <rect key="frame" x="16" y="407" width="374" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-r7-ne2">
-                                <rect key="frame" x="20" y="330" width="110" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXP-Jw-rlx">
-                                <rect key="frame" x="290" y="330" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="P7a-eT-Yup"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="descriptionTextView" destination="sfP-Wy-8gq" id="jRm-DB-aLw"/>
-                        <outlet property="imageView" destination="MSk-GW-jGR" id="gpV-eZ-Zej"/>
-                        <outlet property="priceField" destination="QXP-Jw-rlx" id="e6H-US-IXF"/>
-                        <outlet property="productName" destination="HaF-r7-ne2" id="5lA-6r-HYZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E1g-PK-wQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bi0-c2-POD">
-                    <connections>
-                        <action selector="onImageButton:" destination="1Kq-vL-KlP" id="fvP-U3-dns"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-1613.0434782608697" y="2035.7142857142856"/>
         </scene>
         <!--Product Details View Controller-->
         <scene sceneID="KYy-eK-rSN">
@@ -656,6 +585,124 @@
             </objects>
             <point key="canvasLocation" x="-2382.608695652174" y="2035.7142857142856"/>
         </scene>
+        <!--Market Camera View Controller-->
+        <scene sceneID="5F4-uP-IsL">
+            <objects>
+                <viewController storyboardIdentifier="MarketCameraViewController" id="Qq4-oB-Rl7" customClass="MarketCameraViewController" customModule="CampusLoop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nfK-oD-8u7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99V-Gx-pdI">
+                                <rect key="frame" x="19" y="20" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EI5-oO-o8b"/>
+                                    <constraint firstAttribute="width" constant="48" id="T7D-eZ-bBW"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCancelButton:" destination="Qq4-oB-Rl7" eventType="touchUpInside" id="jPv-dU-QTC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-d1-qc6">
+                                <rect key="frame" x="363" y="20" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="V4w-HE-enC"/>
+                                    <constraint firstAttribute="height" constant="30" id="eTE-Ls-fV0"/>
+                                </constraints>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="onPostButton:" destination="Qq4-oB-Rl7" eventType="touchUpInside" id="4Be-eq-IND"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-d2-8qy">
+                                <rect key="frame" x="20" y="58" width="374" height="274"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Lwc-wA-2r6"/>
+                                    <constraint firstAttribute="width" secondItem="JJd-d2-8qy" secondAttribute="height" multiplier="187:137" id="gXq-co-O35"/>
+                                    <constraint firstAttribute="height" constant="274" id="nSs-ht-WZI"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jEb-uH-dSD" appends="YES" id="Axf-eP-DXX"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-nm-Smm">
+                                <rect key="frame" x="20" y="340" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hXo-mo-uj3"/>
+                                    <constraint firstAttribute="width" constant="374" id="zbk-9X-tEu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFb-Os-10P">
+                                <rect key="frame" x="20" y="382" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="SjR-EZ-QLz"/>
+                                    <constraint firstAttribute="height" constant="34" id="qQr-PN-6Dz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wa3-6K-SXT">
+                                <rect key="frame" x="20" y="424" width="374" height="183"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="ObC-AN-LIA"/>
+                                    <constraint firstAttribute="height" constant="183" id="vKF-Ig-2HL"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kL5-Zp-fc4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wa3-6K-SXT" firstAttribute="top" secondItem="XFb-Os-10P" secondAttribute="bottom" constant="8" symbolic="YES" id="0Fa-ch-Qd6"/>
+                            <constraint firstItem="PSW-d1-qc6" firstAttribute="top" secondItem="kL5-Zp-fc4" secondAttribute="top" constant="20" id="1Ka-41-JeX"/>
+                            <constraint firstItem="kL5-Zp-fc4" firstAttribute="trailing" secondItem="JJd-d2-8qy" secondAttribute="trailing" constant="20" id="6yE-0x-xA4"/>
+                            <constraint firstItem="kL5-Zp-fc4" firstAttribute="trailing" secondItem="PSW-d1-qc6" secondAttribute="trailing" constant="20" id="7S9-A8-MHK"/>
+                            <constraint firstItem="JJd-d2-8qy" firstAttribute="leading" secondItem="kL5-Zp-fc4" secondAttribute="leading" constant="20" id="9eC-b9-lwo"/>
+                            <constraint firstItem="Wa3-6K-SXT" firstAttribute="leading" secondItem="kL5-Zp-fc4" secondAttribute="leading" constant="20" id="DJj-Dl-VMr"/>
+                            <constraint firstItem="kL5-Zp-fc4" firstAttribute="trailing" secondItem="Wa3-6K-SXT" secondAttribute="trailing" constant="20" id="FYY-VG-CBN"/>
+                            <constraint firstItem="99V-Gx-pdI" firstAttribute="top" secondItem="kL5-Zp-fc4" secondAttribute="top" constant="20" id="GZz-E7-6E9"/>
+                            <constraint firstItem="kL5-Zp-fc4" firstAttribute="bottom" secondItem="Wa3-6K-SXT" secondAttribute="bottom" constant="201" id="Jg1-3L-ZvH"/>
+                            <constraint firstItem="lBC-nm-Smm" firstAttribute="top" secondItem="JJd-d2-8qy" secondAttribute="bottom" constant="8" symbolic="YES" id="O7v-I4-g25"/>
+                            <constraint firstItem="kL5-Zp-fc4" firstAttribute="trailing" secondItem="XFb-Os-10P" secondAttribute="trailing" constant="20" id="OSl-72-ubT"/>
+                            <constraint firstItem="PSW-d1-qc6" firstAttribute="leading" secondItem="99V-Gx-pdI" secondAttribute="trailing" constant="296" id="SCn-fK-VvR"/>
+                            <constraint firstItem="XFb-Os-10P" firstAttribute="leading" secondItem="kL5-Zp-fc4" secondAttribute="leading" constant="20" id="U6Q-Ek-yQc"/>
+                            <constraint firstItem="JJd-d2-8qy" firstAttribute="top" secondItem="PSW-d1-qc6" secondAttribute="bottom" constant="8" symbolic="YES" id="VXS-b8-aCi"/>
+                            <constraint firstItem="99V-Gx-pdI" firstAttribute="leading" secondItem="kL5-Zp-fc4" secondAttribute="leading" constant="19" id="W5C-Mb-xfr"/>
+                            <constraint firstItem="JJd-d2-8qy" firstAttribute="top" secondItem="99V-Gx-pdI" secondAttribute="bottom" constant="8" symbolic="YES" id="bcl-xW-kCw"/>
+                            <constraint firstItem="kL5-Zp-fc4" firstAttribute="trailing" secondItem="lBC-nm-Smm" secondAttribute="trailing" constant="20" id="ewT-jZ-uHN"/>
+                            <constraint firstItem="Wa3-6K-SXT" firstAttribute="top" secondItem="XFb-Os-10P" secondAttribute="bottom" constant="8" symbolic="YES" id="f0c-Bz-qqt"/>
+                            <constraint firstItem="PSW-d1-qc6" firstAttribute="leading" secondItem="99V-Gx-pdI" secondAttribute="trailing" constant="296" id="h58-Ht-a26"/>
+                            <constraint firstItem="lBC-nm-Smm" firstAttribute="top" secondItem="JJd-d2-8qy" secondAttribute="bottom" constant="8" symbolic="YES" id="qOp-5t-Rds"/>
+                            <constraint firstItem="XFb-Os-10P" firstAttribute="top" secondItem="lBC-nm-Smm" secondAttribute="bottom" constant="8" symbolic="YES" id="rkP-vb-ym4"/>
+                            <constraint firstItem="XFb-Os-10P" firstAttribute="top" secondItem="lBC-nm-Smm" secondAttribute="bottom" constant="8" symbolic="YES" id="sZu-VO-4Bq"/>
+                            <constraint firstItem="lBC-nm-Smm" firstAttribute="leading" secondItem="kL5-Zp-fc4" secondAttribute="leading" constant="20" id="ty1-0p-UFL"/>
+                            <constraint firstItem="JJd-d2-8qy" firstAttribute="top" secondItem="99V-Gx-pdI" secondAttribute="bottom" constant="8" symbolic="YES" id="ybh-n3-9Jg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JJd-d2-8qy" id="3cq-2h-yWq"/>
+                        <outlet property="price" destination="XFb-Os-10P" id="gxO-i8-VPF"/>
+                        <outlet property="productDescription" destination="Wa3-6K-SXT" id="Adi-b3-qXU"/>
+                        <outlet property="productName" destination="lBC-nm-Smm" id="Dhn-uX-xRx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2k-Ql-gij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jEb-uH-dSD">
+                    <connections>
+                        <action selector="onCameraButton:" destination="Qq4-oB-Rl7" id="lxn-Gp-oJB"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1613.0434782608697" y="2035.7142857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CampusLoop Logo Transparent" width="995" height="341"/>
@@ -672,7 +719,6 @@
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

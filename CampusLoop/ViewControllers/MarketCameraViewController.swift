@@ -2,7 +2,7 @@
 //  MarketCameraViewController.swift
 //  CampusLoop
 //
-//  Created by Okwuolisa Umeokolo on 4/6/21.
+//  Created by Okwuolisa Umeokolo on 4/10/21.
 //
 
 import UIKit
@@ -11,9 +11,9 @@ import Parse
 class MarketCameraViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var productName: UITextField!
-    @IBOutlet weak var priceField: UITextField!
+    @IBOutlet weak var price: UITextField!
+    @IBOutlet weak var productDescription: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,39 +26,42 @@ class MarketCameraViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     @IBAction func onPostButton(_ sender: Any) {
-        let product = PFObject(className: "Product")
+        let post = PFObject(className: "Product")
         
-        product["product_name"] = productName.text!
-        product["price"] = priceField.text!
-        product["description"] = descriptionTextView.text!
-        product["seller"] = PFUser.current()!
+        post["seller"] = PFUser.current()!
+        post["product_name"] = productName.text!
+        post["price"] = price.text!
+        post["description"] = productDescription.text!
         
         let imageData = imageView.image!.pngData()
-        let file = PFFileObject(data: imageData!)
+        let file = PFFileObject(name: "image.png", data: imageData!)
         
-        product["image"] = file
+        post["image"] = file
         
-        product.saveInBackground { (success: Bool, error: Error?) in
+        post.saveInBackground { (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
-                print("saved!")
-            } else {
-                print("Error: \(String(describing: error))")
+                print("saved")
+            }
+            else{
+                print("error")
             }
         }
-
     }
-    @IBAction func onImageButton(_ sender: Any) {
+    
+    
+    @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true
-        
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+        print("onCameraButton selected")
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
             picker.sourceType = .camera
-        } else {
+            print(".camera")
+        } else{
             picker.sourceType = .photoLibrary
+            print(".photoLibrary")
         }
-        
         present(picker, animated: true, completion: nil)
     }
     
@@ -66,12 +69,13 @@ class MarketCameraViewController: UIViewController, UIImagePickerControllerDeleg
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af.imageScaled(to: size)
+        let scaledImage = image.af_imageScaled(to: size)
         
         imageView.image = scaledImage
         
         dismiss(animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 

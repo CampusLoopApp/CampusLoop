@@ -21,8 +21,8 @@
 		79056F91260AA75E0018A25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79056F90260AA75E0018A25E /* Assets.xcassets */; };
 		79056F94260AA75E0018A25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79056F92260AA75E0018A25E /* LaunchScreen.storyboard */; };
 		792E1E4C261CF89700634B7D /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E1E4B261CF89700634B7D /* ProductDetailsViewController.swift */; };
-		792E1E4F261D041700634B7D /* MarketCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E1E4E261D041700634B7D /* MarketCameraViewController.swift */; };
 		797D1403261AAD0D0087C983 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D1402261AAD0D0087C983 /* ProductCell.swift */; };
+		79C09C9A2621E37500785CE7 /* MarketCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C09C992621E37500785CE7 /* MarketCameraViewController.swift */; };
 		C4B35F985F63F379060072AA /* Pods_CampusLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F32B8365C30E9999E72606 /* Pods_CampusLoop.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +44,8 @@
 		79056F93260AA75E0018A25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79056F95260AA75E0018A25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		792E1E4B261CF89700634B7D /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
-		792E1E4E261D041700634B7D /* MarketCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCameraViewController.swift; sourceTree = "<group>"; };
 		797D1402261AAD0D0087C983 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		79C09C992621E37500785CE7 /* MarketCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCameraViewController.swift; sourceTree = "<group>"; };
 		A272B209D3DAC81DEB035F1C /* Pods-CampusLoop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusLoop.debug.xcconfig"; path = "Target Support Files/Pods-CampusLoop/Pods-CampusLoop.debug.xcconfig"; sourceTree = "<group>"; };
 		EDE35094AB808B3DFBF0D9EF /* Pods-CampusLoop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusLoop.release.xcconfig"; path = "Target Support Files/Pods-CampusLoop/Pods-CampusLoop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,8 +106,8 @@
 		797F0AC226116DF1006BD620 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				71A302752612ADE40047DF81 /* CameraViewController.swift */,
 				79056F8B260AA75C0018A25E /* LoginViewController.swift */,
+				71A302752612ADE40047DF81 /* CameraViewController.swift */,
 				7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */,
 				7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */,
 				7900F5C62613D5AC00FF84CD /* ProfileTableViewController.swift */,
@@ -115,7 +115,7 @@
 				7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */,
 				7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */,
 				792E1E4B261CF89700634B7D /* ProductDetailsViewController.swift */,
-				792E1E4E261D041700634B7D /* MarketCameraViewController.swift */,
+				79C09C992621E37500785CE7 /* MarketCameraViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				7900F5CD2613D67000FF84CD /* SearchTableViewController.swift in Sources */,
 				79056F8A260AA75C0018A25E /* SceneDelegate.swift in Sources */,
 				7900F5CA2613D5F300FF84CD /* SettingsTableViewController.swift in Sources */,
-				792E1E4F261D041700634B7D /* MarketCameraViewController.swift in Sources */,
+				79C09C9A2621E37500785CE7 /* MarketCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
