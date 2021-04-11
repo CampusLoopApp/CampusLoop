@@ -9,6 +9,8 @@ import UIKit
 
 class PostTableViewController: UITableViewController {
 
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,7 @@ class PostTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+  
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
