@@ -17,8 +17,6 @@ class MarketCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        collectionView.delegate = self
-        //        collectionView.dataSource = self
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -38,14 +36,11 @@ class MarketCollectionViewController: UICollectionViewController {
             }
         }
         
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.minimumLineSpacing = 4
-        layout.minimumInteritemSpacing = 4
-        let width = (view.frame.size.width - layout.minimumLineSpacing * 2) / 3
-        layout.itemSize = CGSize(width: width, height: width * 1.5)
-        
-        collectionView.reloadData()
-        
+//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        layout.minimumLineSpacing = 40
+//        layout.minimumInteritemSpacing = 40
+//        let width = (view.frame.size.width - layout.minimumLineSpacing * 2) / 3
+//        layout.itemSize = CGSize(width: width, height: width)
     }
     
     /*
@@ -60,32 +55,78 @@ class MarketCollectionViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDataSource
     
-//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//
-//        return 0
-//    }
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+
+        return 1
+    }
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+        // Return the number of items
         return products.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProductCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ProductCell else {
+            fatalError("Unable to deque ProductCell")
+        }
         
         // Configure the cell
-        let product = products[indexPath.section]
+        let product = products[indexPath.item]
         cell.productNameLabel.text = product["product_name"] as? String
         cell.priceLabel.text = product["price"] as? String
-        let imageFile = product["image"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
-        cell.posterImage.af.setImage(withURL: url)
+        
+//        let imageFile = product["image"] as! PFFileObject
+//        let urlString = imageFile.url!
+//        let url = URL(string: urlString)!
+//        cell.posterImage.af.setImage(withURL: url)
+        
+        let userImageFile = product["image"] as! PFFileObject
+        userImageFile.getDataInBackground { (imageData: Data?, error: Error?) in
+            if (error == nil) {
+                cell.posterImage.image = UIImage(data: imageData!)
+            } else {
+                let placeholderImage: UIImage = UIImage(named: "Placeholder_Image")!
+                cell.posterImage.image = placeholderImage
+            }
+        }
+        
+        
+//        userImageFile.getDataInBackgroundWithBlock {
+//            (imageData: NSData!, error: NSError!) -> Void in
+//            if !error {
+//                let image = UIImage(data:imageData)
+//            }
+//        }
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let product = products[indexPath.row]
+        
+        // Pass the selected movies to the details view controller
+        let detailViewController = segue.destination as! ProductDetailsViewController
+        detailViewController.product = product
+//        collectionView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // MARK: UICollectionViewDelegate
     
