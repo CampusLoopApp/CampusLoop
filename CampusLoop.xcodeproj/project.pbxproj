@@ -13,11 +13,12 @@
 		2B3AF5DDC522791679DEC15C /* Pods_CampusLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3DC00AF45615C64A201DC7 /* Pods_CampusLoop.framework */; };
 		711DBC6226237A35004CD18C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DBC6126237A35004CD18C /* FeedViewController.swift */; };
 		7175462D2623818900AF0360 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175462C2623818900AF0360 /* PostCell.swift */; };
+		717546312623AB3A00AF0360 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717546302623AB3A00AF0360 /* CommentsViewController.swift */; };
+		717546342623BF5400AF0360 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717546332623BF5400AF0360 /* CommentCell.swift */; };
 		71A302762612ADE40047DF81 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A302752612ADE40047DF81 /* CameraViewController.swift */; };
 		7900F5C12613D4AA00FF84CD /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */; };
 		7900F5C42613D54300FF84CD /* MarketCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */; };
 		7900F5CD2613D67000FF84CD /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */; };
-		7900F5D02613D7B800FF84CD /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */; };
 		79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F87260AA75C0018A25E /* AppDelegate.swift */; };
 		79056F8A260AA75C0018A25E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F89260AA75C0018A25E /* SceneDelegate.swift */; };
 		79056F8C260AA75C0018A25E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79056F8B260AA75C0018A25E /* LoginViewController.swift */; };
@@ -38,11 +39,12 @@
 		6A3DC00AF45615C64A201DC7 /* Pods_CampusLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711DBC6126237A35004CD18C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7175462C2623818900AF0360 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		717546302623AB3A00AF0360 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		717546332623BF5400AF0360 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		71A302752612ADE40047DF81 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = CampusLoop/CameraViewController.swift; sourceTree = SOURCE_ROOT; };
 		7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewController.swift; sourceTree = "<group>"; };
 		7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		79056F84260AA75C0018A25E /* CampusLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79056F87260AA75C0018A25E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79056F89260AA75C0018A25E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,8 @@
 				797D1402261AAD0D0087C983 /* ProductCell.swift */,
 				711DBC6126237A35004CD18C /* FeedViewController.swift */,
 				7175462C2623818900AF0360 /* PostCell.swift */,
+				717546302623AB3A00AF0360 /* CommentsViewController.swift */,
+				717546332623BF5400AF0360 /* CommentCell.swift */,
 			);
 			path = CampusLoop;
 			sourceTree = "<group>";
@@ -127,7 +131,6 @@
 				7900F5C02613D4AA00FF84CD /* PostTableViewController.swift */,
 				7900F5C32613D54300FF84CD /* MarketCollectionViewController.swift */,
 				7900F5CC2613D67000FF84CD /* SearchTableViewController.swift */,
-				7900F5CF2613D7B800FF84CD /* CommentsTableViewController.swift */,
 				792E1E4B261CF89700634B7D /* ProductDetailsViewController.swift */,
 				79C09C992621E37500785CE7 /* MarketCameraViewController.swift */,
 				1C6CC5742622385500C5E911 /* ProfileViewController.swift */,
@@ -260,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7900F5D02613D7B800FF84CD /* CommentsTableViewController.swift in Sources */,
 				797D1403261AAD0D0087C983 /* ProductCell.swift in Sources */,
 				79056F8C260AA75C0018A25E /* LoginViewController.swift in Sources */,
 				792E1E4C261CF89700634B7D /* ProductDetailsViewController.swift in Sources */,
@@ -270,9 +272,11 @@
 				1C6CC57B26223B4500C5E911 /* ChangeProfileViewController.swift in Sources */,
 				1C6CC5752622385500C5E911 /* ProfileViewController.swift in Sources */,
 				7900F5C42613D54300FF84CD /* MarketCollectionViewController.swift in Sources */,
+				717546342623BF5400AF0360 /* CommentCell.swift in Sources */,
 				79056F88260AA75C0018A25E /* AppDelegate.swift in Sources */,
 				7900F5CD2613D67000FF84CD /* SearchTableViewController.swift in Sources */,
 				1C6CC57826223A4500C5E911 /* SettingsViewController.swift in Sources */,
+				717546312623AB3A00AF0360 /* CommentsViewController.swift in Sources */,
 				79056F8A260AA75C0018A25E /* SceneDelegate.swift in Sources */,
 				79C09C9A2621E37500785CE7 /* MarketCameraViewController.swift in Sources */,
 				7175462D2623818900AF0360 /* PostCell.swift in Sources */,

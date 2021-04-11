@@ -12,11 +12,8 @@ import Parse
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
+    @IBOutlet weak var commentField: UITextField!
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    
-    @IBOutlet weak var commentField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

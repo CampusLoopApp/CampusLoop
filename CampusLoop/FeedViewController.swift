@@ -57,17 +57,49 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.section]
+        
+        let comment = PFObject(className: "Comments")
+        comment["text"] = "this is a random comment"
+        comment["post"] = post
+        
+        comment["author"] = PFUser.current()!
+        post.add(comment, forKey: "comments")
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                print("Comment saved")
+            }
+            
+            else {
+                print("error saving comment")
+                
+            }
+        }
+    }
+    
     
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        
+        let detailsViewController = segue.destination as! CommentsViewController
+        
+        detailsViewController.post = post
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+   
 
 }
