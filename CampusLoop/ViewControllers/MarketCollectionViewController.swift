@@ -7,16 +7,25 @@
 
 import UIKit
 import Parse
-import AlamofireImage
+//import AlamofireImage
 
 private let reuseIdentifier = "ProductCell"
 
-class MarketCollectionViewController: UICollectionViewController {
+class MarketCollectionViewController: UICollectionViewController, UINavigationControllerDelegate {
     
     var products = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(sellProduct(_sender:)))
+//
+//        @objc func sellProduct(_ sender: Any) {
+//           performSegue(withIdentifier: "sellProductSegue", sender: nil)
+//        }
+        
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,12 +44,12 @@ class MarketCollectionViewController: UICollectionViewController {
                 self.collectionView.reloadData()
             }
         }
-        
-//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//        layout.minimumLineSpacing = 40
-//        layout.minimumInteritemSpacing = 40
-//        let width = (view.frame.size.width - layout.minimumLineSpacing * 2) / 3
-//        layout.itemSize = CGSize(width: width, height: width)
+
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
+        let width = (view.frame.size.width - layout.minimumLineSpacing * 2) / 3
+        layout.itemSize = CGSize(width: width, height: width)
     }
     
     /*
@@ -56,8 +65,7 @@ class MarketCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-
+        // Return the number of sections
         return 1
     }
     
@@ -71,17 +79,12 @@ class MarketCollectionViewController: UICollectionViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ProductCell else {
             fatalError("Unable to deque ProductCell")
         }
-        
         // Configure the cell
         let product = products[indexPath.item]
         cell.productNameLabel.text = product["product_name"] as? String
-        cell.priceLabel.text = product["price"] as? String
-        
-//        let imageFile = product["image"] as! PFFileObject
-//        let urlString = imageFile.url!
-//        let url = URL(string: urlString)!
-//        cell.posterImage.af.setImage(withURL: url)
-        
+        cell.priceLabel.text = "$"
+        let priceString: String = product["price"] as! String
+        cell.priceLabel.text! += priceString
         let userImageFile = product["image"] as! PFFileObject
         userImageFile.getDataInBackground { (imageData: Data?, error: Error?) in
             if (error == nil) {
@@ -91,15 +94,6 @@ class MarketCollectionViewController: UICollectionViewController {
                 cell.posterImage.image = placeholderImage
             }
         }
-        
-        
-//        userImageFile.getDataInBackgroundWithBlock {
-//            (imageData: NSData!, error: NSError!) -> Void in
-//            if !error {
-//                let image = UIImage(data:imageData)
-//            }
-//        }
-        
         return cell
     }
     
@@ -111,21 +105,11 @@ class MarketCollectionViewController: UICollectionViewController {
         let indexPath = collectionView.indexPath(for: cell)!
         let product = products[indexPath.row]
         
-        // Pass the selected movies to the details view controller
+        // Pass the selected product to the details view controller
         let detailViewController = segue.destination as! ProductDetailsViewController
         detailViewController.product = product
-//        collectionView.deselectRow(at: indexPath, animated: true)
+        // collectionView.deselectRow(at: indexPath, animated: true)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     // MARK: UICollectionViewDelegate

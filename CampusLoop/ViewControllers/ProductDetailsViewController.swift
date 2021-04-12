@@ -25,7 +25,9 @@ class ProductDetailsViewController: UIViewController {
         productNameLabel.sizeToFit()
         descriptionLabel.text = product!["description"] as? String
         descriptionLabel.sizeToFit()
-        priceLabel.text = product!["price"] as? String
+        priceLabel.text = "$"
+        let priceString: String = product!["price"] as! String
+        priceLabel.text! += priceString
         priceLabel.sizeToFit()
         sellerNameLabel.text = product!["seller"] as? String
         sellerNameLabel.sizeToFit()
