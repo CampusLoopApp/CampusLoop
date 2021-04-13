@@ -96,7 +96,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
 
         cell.usernameLabel.text = user.username
-        cell.captionLabel.text = post["caption"] as! String
+        cell.captionLabel.text = (post["caption"] as! String)
         
 
         return cell
