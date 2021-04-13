@@ -225,20 +225,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IQg-i1-c7e">
-                                        <rect key="frame" x="0.0" y="153" width="414" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="153" width="414" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IQg-i1-c7e" id="Sl6-pA-mgl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Commenter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsU-cc-y5O">
-                                                    <rect key="frame" x="16" y="8" width="90" height="21.5"/>
+                                                    <rect key="frame" x="16" y="8" width="90" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQe-tQ-9r9">
-                                                    <rect key="frame" x="114" y="8" width="292" height="21.5"/>
+                                                    <rect key="frame" x="114" y="8" width="292" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -321,47 +321,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5UA-xk-7UF">
-                            <size key="itemSize" width="300" height="300"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5UA-xk-7UF">
+                            <size key="itemSize" width="281" height="304"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="1bx-4D-J5i" customClass="ProductCell" customModule="CampusLoop" customModuleProvider="target">
-                                <rect key="frame" x="57" y="10" width="300" height="300"/>
+                                <rect key="frame" x="10" y="10" width="192" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AcO-lP-mG1">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="192" height="260"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ks7-Bh-v6C">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QMj-tM-lKT">
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="192.5"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU2-oK-rtz">
-                                            <rect key="frame" x="8" y="214" width="219" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-UM-hH3">
+                                            <rect key="frame" x="8" y="200.5" width="176" height="24"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5m-Up-IXn">
-                                            <rect key="frame" x="8" y="246" width="123" height="41"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DS-TX-BwK">
+                                            <rect key="frame" x="8" y="231.5" width="176" height="20.5"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="QMj-tM-lKT" firstAttribute="leading" secondItem="AcO-lP-mG1" secondAttribute="leading" id="5Rc-r7-AjU"/>
+                                        <constraint firstItem="3DS-TX-BwK" firstAttribute="bottom" secondItem="AcO-lP-mG1" secondAttribute="bottomMargin" id="7n4-Sa-V4e"/>
+                                        <constraint firstItem="Xar-UM-hH3" firstAttribute="leading" secondItem="AcO-lP-mG1" secondAttribute="leadingMargin" id="8Oa-Ww-iD3"/>
+                                        <constraint firstItem="Xar-UM-hH3" firstAttribute="trailing" secondItem="AcO-lP-mG1" secondAttribute="trailingMargin" id="GTo-dv-9pJ"/>
+                                        <constraint firstItem="QMj-tM-lKT" firstAttribute="top" secondItem="AcO-lP-mG1" secondAttribute="top" id="LjS-aj-7jb"/>
+                                        <constraint firstItem="3DS-TX-BwK" firstAttribute="top" secondItem="Xar-UM-hH3" secondAttribute="bottom" constant="7" id="QqQ-IJ-8fo"/>
+                                        <constraint firstItem="QMj-tM-lKT" firstAttribute="centerX" secondItem="Xar-UM-hH3" secondAttribute="centerX" id="ava-wS-S3k"/>
+                                        <constraint firstItem="Xar-UM-hH3" firstAttribute="trailing" secondItem="3DS-TX-BwK" secondAttribute="trailing" id="mHo-CQ-o5c"/>
+                                        <constraint firstItem="Xar-UM-hH3" firstAttribute="top" secondItem="QMj-tM-lKT" secondAttribute="bottom" constant="8" id="p6s-c4-JaF"/>
+                                        <constraint firstItem="Xar-UM-hH3" firstAttribute="leading" secondItem="3DS-TX-BwK" secondAttribute="leading" id="ssH-45-Nhd"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <size key="customSize" width="300" height="300"/>
+                                <size key="customSize" width="192" height="260"/>
                                 <connections>
-                                    <outlet property="posterImage" destination="ks7-Bh-v6C" id="Rkn-Ui-cpu"/>
-                                    <outlet property="priceLabel" destination="s5m-Up-IXn" id="KQ6-P0-juL"/>
-                                    <outlet property="productNameLabel" destination="YU2-oK-rtz" id="7Yr-vh-OM1"/>
+                                    <outlet property="posterImage" destination="QMj-tM-lKT" id="z6p-ft-iOA"/>
+                                    <outlet property="priceLabel" destination="3DS-TX-BwK" id="ysR-By-nib"/>
+                                    <outlet property="productNameLabel" destination="Xar-UM-hH3" id="EoJ-kU-W9R"/>
                                     <segue destination="5s4-Il-Xdh" kind="show" identifier="sellProductSegue" id="bMa-NF-y4o"/>
                                 </connections>
                             </collectionViewCell>
@@ -436,20 +445,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hc1-Gb-Isz">
-                                        <rect key="frame" x="0.0" y="153" width="414" height="37"/>
+                                        <rect key="frame" x="0.0" y="153" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hc1-Gb-Isz" id="9oP-P6-KFK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Commenter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRb-tO-4Dd">
-                                                    <rect key="frame" x="16" y="8" width="90" height="21"/>
+                                                    <rect key="frame" x="16" y="8" width="90" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLl-M1-vmR">
-                                                    <rect key="frame" x="114" y="8" width="292" height="21"/>
+                                                    <rect key="frame" x="114" y="8" width="292" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
