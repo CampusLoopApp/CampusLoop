@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var posterImage: UIImageView!
@@ -14,10 +15,32 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var sellerNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    var product: PFObject?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        productNameLabel.text = product!["product_name"] as? String
+        productNameLabel.sizeToFit()
+        descriptionLabel.text = product!["description"] as? String
+        descriptionLabel.sizeToFit()
+        priceLabel.text = "$"
+        let priceString: String = product!["price"] as! String
+        priceLabel.text! += priceString
+        priceLabel.sizeToFit()
+        sellerNameLabel.text = product!["seller"] as? String
+        sellerNameLabel.sizeToFit()
+        
+        let userImageFile = product!["image"] as! PFFileObject
+        userImageFile.getDataInBackground { (imageData: Data?, error: Error?) in
+            if (error == nil) {
+                self.posterImage.image = UIImage(data: imageData!)
+            } else {
+                let placeholderImage: UIImage = UIImage(named: "Placeholder_Image")!
+                self.posterImage.image = placeholderImage
+            }
+        }
     }
     
 
